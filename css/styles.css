@@ -6,6 +6,7 @@
     --btn-color: #f5f4fa;
     --footer-bg-color: #2f303a;
     --header-bord-color: #ececec;
+    --icon-team-color: #afb1b8;
 }
 
 /* -------- style reset --------*/
@@ -117,8 +118,8 @@ body {
 
 .list-text-about {
     display: flex;
-    margin-left: auto;
     align-items: center;
+    margin-left: auto;
     list-style: none;
 }
 
@@ -361,6 +362,30 @@ body {
     line-height: 1.19;
     color: var(--item-color);
     margin-top: 10px;
+}
+
+.team-links {
+    display: flex;
+    align-items: center;
+    margin: 16px 32px 30px 32px;
+}
+
+.team-link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    padding: 0px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    color: var(--icon-team-color);
+    margin-right: 10px;
+}
+
+.team-icon {
+    /*height: 44px;
+    width: 44px;*/
+    fill: currentColor;
 }
 
 /*-------- кнопки --------*/
