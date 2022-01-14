@@ -191,6 +191,15 @@ body {
     color: var(--main-bg-color);
 }
 
+.list-item:hover .icon-email,
+.list-item:focus .icon-email {
+    fill: var(--main-bg-color);
+}
+.list-item:hover .icon-phone,
+.list-item:focus .icon-phone {
+    fill: var(--main-bg-color);
+}
+
 .list,
 .nav-list,
 .list-text {
@@ -256,8 +265,6 @@ body {
 .nav-list {
     display: flex;
     text-align: left;
-
-    /*display: flex;
     justify-content: space-between;
     /*padding-bottom: 15px;
     padding-top: 15px;*/
@@ -314,6 +321,7 @@ body {
 .hero-item {
     line-height: 1.71;
     color: var(--item-color);
+    margin-top: 10px;
 }
 
 .about-item {
@@ -377,7 +385,11 @@ body {
     border-style: solid;
     border-color: var(--header-bord-color);
     background-color: var(--background-color);
-    border-radius: 10px;
+    overflow: hidden;
+    border-radius: 1px;
+    box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
+        0px 2px 1px rgb(0 0 0 / 20%);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .section-work-title {
@@ -417,6 +429,10 @@ body {
     list-style: none;
 }
 
+.team-link.linkedin {
+    margin-right: 0px;
+}
+
 .team-link {
     display: flex;
     width: 44px;
@@ -427,6 +443,12 @@ body {
     justify-content: center;
     color: var(--icon-team-color);
     margin-right: 10px;
+}
+
+.team-link:hover,
+.team-link:focus {
+    background-color: var(--main-bg-color);
+    color: var(--background-color);
 }
 
 .team-icon {
@@ -456,9 +478,9 @@ body {
     margin-bottom: 50px;
 }
 
-.button-link {
+/*.button-link {
     margin-right: 8px;
-}
+}*/
 
 .button {
     display: inline-block;
@@ -540,7 +562,47 @@ body {
 .cards:nth-child(3n) {
     margin-right: 0;
 }
+/*-------- our clients --------*/
+.clients-list {
+    display: flex;
+    justify-content: space-between;
+}
 
+.client-item {
+    list-style: none;
+}
+
+.section-title {
+    color: var(--font-color);
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+.client-link {
+    display: flex;
+    width: 170px;
+    height: 92px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--icon-team-color);
+    border-radius: 4px;
+    padding: 16px 32px 16px 32px;
+}
+.icon-client {
+    display: flex;
+    fill: var(--icon-team-color);
+}
+.client-link:hover,
+.client-link:focus {
+    border-color: var(--main-bg-color);
+}
+.client-link:hover .icon-client,
+.client-link:focus .icon-client {
+    fill: var(--main-bg-color);
+}
 /*-------- footer --------*/
 
 .logotype-link-footer {
@@ -588,4 +650,45 @@ body {
     background-color: var(--footer-bg-color);
     padding-top: 60px;
     padding-bottom: 60px;
+}
+/*-------- присоединяйтесь --------*/
+
+.join-link {
+    margin-left: auto;
+}
+
+.footer-join {
+    font-weight: bold;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--background-color);
+    margin-bottom: 20px;
+}
+.footer-links {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 206px;
+    height: 44px;
+}
+.footer-link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    padding: 0px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.footer-link:hover,
+.footer-link:focus {
+    background-color: var(--main-bg-color);
+}
+.icon-footer {
+    height: 20px;
+    width: 20px;
+    fill: var(--background-color);
 }
