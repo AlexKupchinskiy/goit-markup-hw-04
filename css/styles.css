@@ -103,7 +103,6 @@ body {
     color: var(--main-bg-color);
     text-decoration: none;
     font-family: raleway;
-    /*margin-bottom: 15px;*/
 }
 
 .logotype-link-studio {
@@ -134,7 +133,6 @@ body {
 .text-item-studio {
     color: var(--main-bg-color);
     text-decoration: none;
-    /*margin-left: 93px;*/
 }
 .list-about {
     color: var(--main-bg-color);
@@ -154,13 +152,15 @@ body {
 
 .text-item {
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
+    /*font-size: 14px;*/
+    /*line-height: 1.14;*/
     color: var(--font-color);
     text-decoration: none;
     margin-left: 50px;
 }
 .text-item-about {
+    display: flex;
+    text-align: center;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -185,10 +185,14 @@ body {
     text-decoration: none;
     color: var(--main-bg-color);
 }
-.icon-email:hover,
-.icon-email:focus,
-.icon-phone:hover,
-.icon-phone:focus {
+
+.text-item-about:hover .icon-email,
+.text-item-about:focus .icon-email {
+    fill: var(--main-bg-color);
+}
+
+.text-item-about:hover .icon-phone,
+.text-item-about:focus .icon-phone {
     fill: var(--main-bg-color);
 }
 
@@ -214,9 +218,10 @@ body {
 .icon-phone {
     width: 10px;
     height: 16px;
+    margin-top: 1px;
     margin-right: 10px;
+    align-items: center;
     fill: var(--item-color);
-    align-self: baseline;
 }
 
 /*-------- оглавление --------*/
@@ -235,8 +240,6 @@ body {
     line-height: 1.36;
     margin: auto;
     width: 696px;
-    /*margin-left: auto;
-    margin-right: auto;*/
     letter-spacing: 0.06em;
     text-transform: uppercase;
     width: 696px;
@@ -287,7 +290,6 @@ body {
 }
 
 .content-about {
-    /*margin-bottom: 10px;*/
     font-size: 14px;
     font-weight: 700;
     line-height: 1.14;
@@ -415,8 +417,6 @@ body {
 }
 
 .team-icon {
-    /*height: 44px;
-    width: 44px;*/
     fill: currentColor;
 }
 .team {
@@ -465,7 +465,6 @@ body {
     padding: 10px 32px;
     color: var(--background-color);
     background-color: var(--main-bg-color);
-    /*font-family: inherit;*/
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
@@ -537,10 +536,6 @@ body {
 }
 
 .about-item {
-    /*font-weight: 700;*/
-    /*font-size: 18px;*/
-    /*line-height: 2;*/
-    /*color: var(--font-color);*/
     text-decoration: none;
 }
 .card-list {
@@ -680,7 +675,6 @@ body {
     text-transform: uppercase;
     color: var(--background-color);
     margin-bottom: 20px;
-    /*margin-top: 10px;*/
 }
 .footer-links {
     list-style: none;
